@@ -1,0 +1,33 @@
+.blog_contents {
+    padding: 5rem 0 2rem;
+}
+
+.blog {
+    margin-bottom: 2rem;
+}
+
+.blog__avatar img {
+    display: block;
+    min-width: 100%;
+    width: 100%;
+}
+
+.blog__info__title a{
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.blog__info__title a:hover {
+    color: #ffb900;
+}
+
+.blog__info__meta {
+    display: flex;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.5rem;
+}
+

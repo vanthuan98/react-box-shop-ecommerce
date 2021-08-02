@@ -1,0 +1,134 @@
+.shop__filter {
+    padding: 2rem;
+}
+
+.shop__filter .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.shop__filter-left {
+    display: flex;
+}
+
+.filter__grid, .filter__list {
+    margin-right: 1rem;
+    padding: .5rem;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.filter__grid box-icon, .filter__list box-icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    transition: .2s ease-in-out;
+}
+
+.filter__grid:hover box-icon,
+.filter__list:hover box-icon
+{
+    transform: scale(1.2);
+}
+
+.filter__sort {
+    width: 230px;
+    padding: .5rem;
+    border: 1px solid #ddd;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+.filter__sort:hover {
+    color: #fff;
+    background-color: #555;
+}
+
+.filter__sort ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: .2s linear;
+}
+
+.filter__sort:hover ul {
+    transform: rotate(0deg);
+    color: #555;
+}
+
+.filter__sort ul li {
+    padding: .5rem;
+    border-bottom: 1px solid #ddd;
+    transition: .2s ease-out;
+}
+
+.filter__sort ul li:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.quantity-product-per-page {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    padding: .5rem;
+    
+}
+
+.quantity-product-per-page:hover p {
+    transition: .2s linear;
+    color: #ffb900;
+}
+
+.current-quanlity {
+    margin: 0 5px;
+}
+
+.current-quantity-product {
+    display: flex;
+    align-items: center;
+}
+
+.current-quantity-product box-icon {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+
+.quantity-product-per-page ul {
+    position: absolute;
+    width: 50%;
+    top: 100%;
+    right: 0;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: .2s linear;
+    background-color: #ffb900;
+    color: #fff;
+}
+
+.quantity-product-per-page:hover ul {
+    transform: rotate(0deg);
+}
+
+.quantity-product-per-page ul li {
+    padding: .5rem 2rem;
+    text-align: center;
+    color: #fff;
+    transition: .2s ease-out;
+}
+
+.quantity-product-per-page ul li:hover {
+    color: #ffb900;
+    background-color: #fff;
+}

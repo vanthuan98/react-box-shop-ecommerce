@@ -1,0 +1,32 @@
+.blog__header {
+    text-align: center;
+    padding: 5rem 0;
+    background: url('../../images/blogs/bg_breadcrumb_v1.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.blog__header h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.breadcrumb-blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.breadcrumb-blog a {
+    display: inline-block;
+    padding: 1rem;
+    color: #fff;
+    transition: .2s ease;
+}
+
+.breadcrumb-blog a:hover {
+    color: #ffb900;
+}
+

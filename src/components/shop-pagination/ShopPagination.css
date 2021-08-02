@@ -1,0 +1,54 @@
+.pagination-wrap {
+    padding: 1.5rem 0 2rem;
+}
+
+.pagination-wrap ul {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.pagination-wrap ul li {
+    margin: 0 .5rem;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ddd;
+    color: #555;
+    text-align: center;
+    transition: .2s linear;
+    cursor: pointer;
+    user-select: none;
+    background: #fff;
+}
+
+.pagination-wrap ul li.active {
+    background-color: #000;
+    color: #fff;
+}
+
+.pagination-wrap ul li:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .shop__filter {
+        padding: 2rem 0;
+    }
+    .shop__filter .container {
+        padding: 0 0.75rem;
+    }
+    .shop__filter .container {
+        flex-wrap: wrap;
+    }
+    .shop__filter-left {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .shop__filter-right {
+        width: 100%;
+    }
+}

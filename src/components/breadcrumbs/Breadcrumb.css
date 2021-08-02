@@ -1,0 +1,23 @@
+.breadcrumb {
+    font-size: 1rem;
+    color: #555;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+}
+
+.breadcrumb_home, .breadcrumb_shop, .breadcrumb span {
+    display: inline-block;
+    margin: 1rem 1rem;
+    color: #555;
+    transition: .2s ease-out;
+}
+
+.breadcrumb a:hover {
+    color: #ffb900;
+}
+
+@media (max-width: 576px) {
+    .breadcrumb_home, .breadcrumb_shop, .breadcrumb span {
+        margin: .5rem;
+    }
+}

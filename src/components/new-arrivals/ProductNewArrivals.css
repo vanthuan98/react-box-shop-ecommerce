@@ -1,0 +1,9 @@
+.new-arrivals__title {
+    margin: 4rem 0 3rem;
+    font-size: 1.2rem;
+}
+
+.new-arrivals__title h2 {
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+}

@@ -1,0 +1,106 @@
+.hero__content {
+    padding: 6rem 0;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+h1.hero__content__title {
+    color: #fff;
+    font-size: 3rem;
+}
+
+p.hero__content__subtitle {
+    color: #fff;
+}
+
+button.hero__content__btn {
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    font-family: 'Poppins';
+    color: #fff;
+    margin-top: 2rem;
+    background-color: #ffb900;
+    transition: .3s ease-in-out;
+}
+
+button.hero__content__btn:hover {
+    background-color: #000;
+}
+
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #fff !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ffb900 !important;
+}
+
+/* Banner Hero */
+.banner-hero {
+    margin: 1.5rem 0 4rem 0;
+}
+
+.banner-hero__wrapped {
+    position: relative;
+}
+
+.banner-hero__wrapped img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.banner-hero__wrapped span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    transition: all .2s linear;
+    border: 0px solid transparent;
+}
+
+div.banner-1:hover span{
+    border: 10px solid #f72e33;
+}
+
+div.banner-2:hover span{
+    border: 10px solid #ffb900;
+}
+
+div.banner-3:hover span{
+    border: 10px solid #0093e0;
+}
+
+@media (max-width: 768px) {
+    .banner-hero__wrapped {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero__content {
+        padding: 4rem 0;
+    }
+    h1.hero__content__title {
+        font-size: 2rem;
+    }
+    button.hero__content__btn {
+        padding: .8rem 1.6rem;
+    }
+}
+
+
+
+
