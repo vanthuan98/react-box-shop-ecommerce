@@ -1,6 +1,11 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+
+// Import Toastify
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 // import Swiper core and required modules
 import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper/core";
 // Import Swiper React components
@@ -17,6 +22,9 @@ export default function Products(props) {
 
 	function addToCart(product, quantity) {
 		dispatch(addProductToCart(product, quantity));
+		toast.success("successfull", {
+			autoClose: 2000,
+		});
 	}
 
 	function scrollToTop() {
@@ -80,6 +88,7 @@ export default function Products(props) {
 					{showProduct}
 				</Swiper>
 			</div>
+			<ToastContainer />
 		</section>
 	);
 }

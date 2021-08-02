@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import "react-toastify/dist/ReactToastify.css";
 import BannerProduct from "./Banner-product";
 import Products from "./Products";
 import "./Show-product.css";

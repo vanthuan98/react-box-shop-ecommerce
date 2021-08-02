@@ -2,6 +2,8 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { addProductToCart } from "../../actions";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./ShopProducts.css";
 
 const ShopProducts = () => {
@@ -9,6 +11,9 @@ const ShopProducts = () => {
 
 	function addToCart(product, quantity) {
 		dispatch(addProductToCart(product, quantity));
+		toast.success("successful", {
+			autoClose: 2000,
+		});
 	}
 
 	function scrollToTop() {
@@ -59,6 +64,7 @@ const ShopProducts = () => {
 			<div className="container">
 				<div className="row">{showProducts}</div>
 			</div>
+			<ToastContainer />
 		</section>
 	);
 };

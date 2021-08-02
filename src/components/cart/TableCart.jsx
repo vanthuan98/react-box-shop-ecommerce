@@ -6,6 +6,9 @@ import {
 } from "../../actions";
 import cancel from "./../../images/cancel.png";
 import WhenNoProductInCart from "./WhenNoProductInCart";
+// Import Toastify
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const TableCart = () => {
 	const cartProducts = useSelector((state) => state.cartProducts);
@@ -13,6 +16,9 @@ const TableCart = () => {
 
 	function handleDeleteProductInCart(product) {
 		dispatch(deleteProductInCart(product));
+		toast.success("Deleted", {
+			autoClose: 2000,
+		});
 	}
 
 	function handleChangeQuantityProduct(product, number) {
@@ -76,6 +82,7 @@ const TableCart = () => {
 					showProductsInCart
 				)}
 			</tbody>
+			<ToastContainer />
 		</table>
 	);
 };

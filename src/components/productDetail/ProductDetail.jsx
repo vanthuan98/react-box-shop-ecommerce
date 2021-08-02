@@ -3,6 +3,8 @@ import { useDispatch } from "react-redux";
 import { addProductToCart } from "../../actions";
 import Breadcrumb from "../breadcrumbs/Breadcrumb";
 import ShowProduct from "../show-product/Show-product";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./ProductDetail.css";
 
 const ProductDetail = (props) => {
@@ -21,6 +23,9 @@ const ProductDetail = (props) => {
 
 	function addToCart(product, quantity) {
 		dispatch(addProductToCart(product, quantity));
+		toast.success("seccessfull", {
+			autoClose: 2000,
+		});
 	}
 
 	return (
@@ -70,6 +75,7 @@ const ProductDetail = (props) => {
 				</div>
 				<h2 className="title">Relate Products</h2>
 				<ShowProduct />
+				<ToastContainer />
 			</div>
 		</section>
 	);
