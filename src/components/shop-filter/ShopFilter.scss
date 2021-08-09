@@ -1,0 +1,142 @@
+@import "../../scss/mixin";
+
+.shop__filter {
+    padding: 2rem;
+    @include respond-to('medium') {
+        padding: 2rem 0;
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 0;
+        @include respond-to('medium') {
+            padding: 0 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .shop__filter-left {
+            display: flex;
+            @include respond-to('meidum') {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            .filter__grid, .filter__list {
+                margin-right: 1rem;
+                padding: .5rem;
+                border: 1px solid #ddd;
+                cursor: pointer;
+
+                box-icon {
+                    width: 30px;
+                    height: 30px;
+                    display: block;
+                    transition: .2s ease-in-out;
+                }
+
+                &:hover box-icon {
+                    transform: scale(1.2);
+                }
+            }
+            .filter__sort {
+                width: 230px;
+                padding: .5rem;
+                border: 1px solid #ddd;
+                position: relative;
+                display: flex;
+                align-items: center;
+                transition: .2s ease-in;
+                cursor: pointer;
+
+                &:hover {
+                    color: #fff;
+                    background-color: #555;
+                }
+                &:hover ul {
+                    transform: rotate(0deg);
+                    color: #555;
+                }
+
+                ul {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    background: #fff;
+                    transform: rotateX(90deg);
+                    transform-origin: top;
+                    transition: .2s linear;
+                    z-index: 1;
+
+                    li {
+                        padding: .5rem;
+                        border-bottom: 1px solid #ddd;
+                        transition: .2s ease-out;
+                        background-color: #fff;
+
+                        &:hover {
+                            background-color: #555;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .shop__filter-right {
+            .quantity-product-per-page {
+                display: flex;
+                position: relative;
+                cursor: pointer;
+                padding: .5rem;
+
+                &:hover p {
+                    transition: .2s linear;
+                    color: #ffb900;
+                }
+                &:hover ul {
+                    transform: rotate(0deg);
+                }
+
+                .current-quantity-product {
+                    display: flex;
+                    align-items: center;
+
+                    .current-quanlity {
+                        margin: 0 5px;
+                    }
+
+                    box-icon {
+                        margin-left: 5px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                .quantity-select {
+                    position: absolute;
+                    width: 50%;
+                    top: 100%;
+                    right: 0;
+                    transform: rotateX(90deg);
+                    transform-origin: top;
+                    transition: .2s linear;
+                    background-color: #ffb900;
+                    color: #fff;
+
+                    li {
+                        padding: .5rem 2rem;
+                        text-align: center;
+                        color: #fff;
+                        transition: .2s ease-out;
+
+                        &:hover {
+                            color: #ffb900;
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

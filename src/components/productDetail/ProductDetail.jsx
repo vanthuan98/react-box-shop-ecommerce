@@ -5,7 +5,7 @@ import Breadcrumb from "../breadcrumbs/Breadcrumb";
 import ShowProduct from "../show-product/Show-product";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./ProductDetail.css";
+import "./ProductDetail.scss";
 
 const ProductDetail = (props) => {
 	const { product } = props;
@@ -23,7 +23,7 @@ const ProductDetail = (props) => {
 
 	function addToCart(product, quantity) {
 		dispatch(addProductToCart(product, quantity));
-		toast.success("seccessfull", {
+		toast.success("Successfull", {
 			autoClose: 2000,
 		});
 	}

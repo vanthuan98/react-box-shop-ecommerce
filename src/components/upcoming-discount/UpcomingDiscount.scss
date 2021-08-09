@@ -1,0 +1,75 @@
+@import "../../scss/mixin";
+
+.upcoming-discount {
+    display: flex;
+    margin: 2rem 0;
+    @include respond-to('medium') {
+        flex-wrap: wrap;
+    }
+
+    .discount-wrap:nth-child(1) {
+        background: url('../../images/hero/shoes-banner-bg-1.jpg') no-repeat center;
+        background-size: cover;
+    }
+    .discount-wrap:nth-child(2) {
+        background: url('../../images/hero/shoes-banner-bg-2.jpg') no-repeat center;
+        background-size: cover;
+    }
+    .discount-wrap {
+        position: relative;
+        overflow: hidden;
+        width: 50%;
+
+        @include respond-to('medium') {
+            width: 100%;
+        }
+
+        .discount-wrap__content {
+            padding: 2rem 3rem;
+
+            h2 {
+                color: #0093e0;
+                font-size: 3rem;
+                line-height: 1.2;
+
+                @include respond-to('medium') {
+                    font-size: 2.5rem;
+                }
+            }
+            h3 {
+                color: #fff;
+                font-size: 2rem;
+                line-height: 1.2;
+
+                @include respond-to('medium') {
+                    font-size: 1.5;
+                }
+            }
+            p {
+                color: #fff;
+                font-size: 1rem;
+                line-height: 1.2;
+                margin-bottom: 2rem;
+            }
+            a {
+                display: inline-block;
+                color: #fff;
+                border: none;
+                background-color: #ffb900;
+                font-family: "Poppins", sans-serif;
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                font-weight: 500;
+                transition: .2s linear;
+
+                @include respond-to('meidum') {
+                    padding: .6rem 1.2rem;
+                }
+
+                &:hover {
+                    background-color: #000;
+                }
+            }
+        }
+    }
+}

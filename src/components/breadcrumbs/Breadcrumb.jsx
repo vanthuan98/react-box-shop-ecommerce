@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./Breadcrumb.css";
+import "./Breadcrumb.scss";
 
 const Breadcrumb = (props) => {
 	const { title } = props;

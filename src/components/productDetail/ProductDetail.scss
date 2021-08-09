@@ -1,0 +1,104 @@
+@import "../../scss/mixin";
+
+.product-detail {
+    .container:nth-child(2) {
+        padding: 3rem 0;
+    }
+    .product-detail__avatar {
+        @include respond-to('medium') {
+            margin-bottom: 1rem;
+        }
+
+        img {
+            display: block;
+            width: 80%;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    }
+    .product-detail__info {
+        @include respond-to('small') {
+            padding: 0 .75rem;
+        }
+
+        .info__title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 2rem;
+
+            @include respond-to('small') {
+                text-align: center;
+            }
+        }
+        .info__content {
+            margin-bottom: 2rem;
+        }
+        .info__price {
+            display: inline-block;
+            font-size: 2rem;
+            color: tomato;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        .info__cart-section {
+            display: flex;
+
+            .cart__quantity {
+                display: flex;
+                margin-right: 1.5rem;
+
+                .cart__quantity__current {
+                    padding: 0 2.5rem;
+                    border: 1px solid #ddd;
+                    display: flex;
+                    align-items: center;
+                    border-left: 1px solid #ddd;
+                    border-top: 1px solid #ddd;
+                    border-bottom: 1px solid #ddd;
+                }
+                .cart__quantity__change {
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid #ddd;
+
+                    span{
+                        display: inline-block;
+                        padding: 0 1rem;
+                        cursor: pointer;
+                    }
+                    span:nth-child(1) {
+                        border-bottom: 1px solid #ddd;
+                    }
+                }
+            }
+            button.addToCart {
+                outline: none;
+                padding: 0 2rem;
+                font-family: 'Poppins';
+                color: #fff;
+                background: tomato;
+                font-weight: 600;
+                border: 3px solid tomato;
+                transition: .2s ease-in-out;
+                cursor: pointer;
+
+                @include respond-to('small') {
+                    flex-grow: 1;
+                }
+
+                &:hover {
+                    background: #fff;
+                    color: tomato;
+                }
+            }
+        }
+    }
+    .title {
+        font-size: 2rem;
+        font-weight: 500;
+        color: #555;
+        border-bottom: 1px solid #ddd;
+        margin: 2rem;
+    }
+}

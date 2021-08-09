@@ -1,0 +1,111 @@
+
+.blogs {
+    .blogs__title {
+        margin: 4rem 0 3rem;
+        font-size: 1.2rem;
+
+        h2 {
+            font-weight: 600;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+    .blog-card {
+        .blog-avatar {
+            display: block;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        .blog__content {
+            padding: 1rem 0;
+
+            .blog__title {
+                font-weight: 500;
+                color: #333;
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+                transition: .2s ease-in-out;
+                overflow: hidden;
+                white-space: nowrap; 
+                text-overflow: ellipsis;
+
+                &:hover {
+                    color: #ffb900;
+                }
+            }
+            .meta {
+                display: flex;
+                margin-bottom: 1rem;
+
+                .date-time {
+                    text-align: center;
+                    padding: .5rem;
+                    background-color: #ffb900;
+                    color: #fff;
+                }
+
+                .comments {
+                    display: flex;
+                    align-items: flex-end;
+                    margin-left: 1rem;
+
+                    box-icon {
+                        width: 30px;
+                    }
+
+                    span {
+                        font-size: .9rem;
+                    }
+                }
+                .views {
+                    display: flex;
+                    align-items: flex-end;
+                    margin-left: 1rem;
+
+                    box-icon {
+                        width: 30px;
+                    }
+
+                    span {
+                        font-size: .9rem;
+                    }
+                }
+                .author {
+                    display: flex;
+                    align-items: flex-end;
+                    margin-left: 1rem;
+                    flex-grow: 1;
+                    justify-content: flex-end;
+
+                    span:nth-child(2) {
+                        margin-left: .3rem;
+                        color: #ffb900;
+                        font-style: italic;
+                    }
+                }
+            }
+            .excerpt {
+                color: #555;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+            .btn-read-more {
+                display: inline-block;
+                color: #fff;
+                background-color: #000;
+                font-weight: 500;
+                font-size: 1rem;
+                padding: .8rem 2rem;
+                transition: .2s linear;
+
+                &:hover {
+                    background-color: #ffb900;
+                }
+            }
+        }
+
+    }
+}
+

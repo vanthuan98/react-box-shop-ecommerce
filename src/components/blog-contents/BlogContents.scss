@@ -1,0 +1,100 @@
+.blog_contents {
+    padding: 5rem 0 2rem;
+
+    .blog {
+        margin-bottom: 2rem;
+
+        .blog__avatar {
+            img {
+                display: block;
+                min-width: 100%;
+                width: 100%;
+            }
+        }
+        .blog__info {
+            .blog__info__title {
+                a {
+                    display: inline-block;
+                    font-size: 1.5rem;
+                    color: #555;
+                    font-weight: 500;
+                    margin-bottom: 2rem;
+                    &:hover {
+                        color: #ffb900;
+                    }
+                }
+            }
+            .blog__info__meta {
+                display: flex;
+                padding-bottom: .5rem;
+                border-bottom: 1px solid #ddd;
+                margin-bottom: 1.5rem;
+
+                .date-time {
+                    text-align: center;
+                    padding: .5rem;
+                    background-color: #ffb900;
+                    color: #fff;
+                }
+
+                .comments {
+                    display: flex;
+                    align-items: flex-end;
+                    margin-left: 1rem;
+
+                    box-icon {
+                        width: 30px;
+                    }
+
+                    span {
+                        font-size: .9rem;
+                    }
+                }
+                .views {
+                    display: flex;
+                    align-items: flex-end;
+                    margin-left: 1rem;
+
+                    box-icon {
+                        width: 30px;
+                    }
+
+                    span {
+                        font-size: .9rem;
+                    }
+                }
+                .author {
+                    display: flex;
+                    align-items: flex-end;
+                    margin-left: 1rem;
+                    flex-grow: 1;
+                    justify-content: flex-end;
+
+                    span:nth-child(2) {
+                        margin-left: .3rem;
+                        color: #ffb900;
+                        font-style: italic;
+                    }
+                }
+            }
+            .excerpt {
+                color: #555;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+            .btn-read-more {
+                display: inline-block;
+                color: #fff;
+                background-color: #000;
+                font-weight: 500;
+                font-size: 1rem;
+                padding: .8rem 2rem;
+                transition: .2s linear;
+
+                &:hover {
+                    background-color: #ffb900;
+                }
+            }
+        }
+    }
+}

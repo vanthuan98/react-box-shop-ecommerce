@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import "./BlogContents.css";
+import "./BlogContents.scss";
 
 const BlogContents = () => {
 	window.scrollTo(0, 0);

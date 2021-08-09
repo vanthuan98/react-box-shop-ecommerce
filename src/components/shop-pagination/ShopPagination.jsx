@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeCurrentPaginationItemProduct } from "../../actions";
-import "./ShopPagination.css";
+import "./ShopPagination.scss";
 
 const ShopPagination = () => {
 	const products = useSelector((state) => state.productsReducer);

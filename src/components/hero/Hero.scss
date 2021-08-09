@@ -1,0 +1,97 @@
+@import "../../scss/mixin";
+
+// hero slides
+.hero-slides {
+    .hero__wrapped {
+        .text-left {
+            text-align: left;
+        }
+        .text-right {
+            text-align: right;
+        }
+        .hero__content {
+            padding: 6rem 0;
+
+            @include respond-to('small') {
+                padding: 4rem 0;
+            }
+
+            h1.hero__content__title {
+                color: #fff;
+                font-size: 3rem;
+
+                @include respond-to('small') {
+                    font-size: 2rem;
+                }
+            }
+            p.hero__content__subtitle {
+                color: #fff;
+            }
+            button.hero__content__btn {
+                border: none;
+                outline: none;
+                padding: 1rem 2rem;
+                font-weight: 500;
+                font-family: 'Poppins';
+                color: #fff;
+                margin-top: 2rem;
+                background-color: #ffb900;
+                transition: .3s ease-in-out;
+
+                @include respond-to('small') {
+                    padding: .8rem 1.6rem;
+                }
+
+                &:hover {
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    .swiper-pagination-bullet {
+        width: 10px !important;
+        height: 10px !important;
+        background-color: #fff !important;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #ffb900 !important;
+    }
+}
+
+// banner hero
+.banner-hero {
+    margin: 1.5rem 0 4rem 0;
+
+    .banner-hero__wrapped {
+        position: relative;
+
+        @include respond-to('medium') {
+            margin-bottom: 1rem;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+        }
+        span {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            top: 0;
+            left: 0;
+            transition: all .2s linear;
+            border: 0px solid transparent;
+        }
+    }
+    .banner-1:hover span{
+        border: 10px solid #f72e33;
+    }
+    .banner-2:hover span{
+        border: 10px solid #ffb900;
+    }
+    .banner-3:hover span{
+        border: 10px solid #0093e0;
+    }
+}

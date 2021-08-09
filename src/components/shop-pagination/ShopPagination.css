@@ -40,8 +40,6 @@
     }
     .shop__filter .container {
         padding: 0 0.75rem;
-    }
-    .shop__filter .container {
         flex-wrap: wrap;
     }
     .shop__filter-left {

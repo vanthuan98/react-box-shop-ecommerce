@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { addProductToCart } from "../../actions";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./ShopProducts.css";
+import "./ShopProducts.scss";
 
 const ShopProducts = () => {
 	const dispatch = useDispatch();

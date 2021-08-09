@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { addProductToCart } from "../../actions";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./ProductNewArrivals.css";
+import "./ProductNewArrivals.scss";
 
 const ProductNewArrivals = () => {
 	const products = useSelector((state) => state.productsReducer);
@@ -13,7 +13,7 @@ const ProductNewArrivals = () => {
 
 	function addToCart(product, quantity) {
 		dispatch(addProductToCart(product, quantity));
-		toast.success("successfull", {
+		toast.success("Successfull", {
 			autoClose: 2000,
 		});
 	}

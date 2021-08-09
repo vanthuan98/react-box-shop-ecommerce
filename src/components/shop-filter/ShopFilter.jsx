@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { changeQuantityProductPerPage } from "../../actions";
-import "./ShopFilter.css";
+import "./ShopFilter.scss";
 
 const ShopProduct = () => {
 	const dispatch = useDispatch();

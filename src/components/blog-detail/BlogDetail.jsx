@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./BlogDetail.css";
+import "./BlogDetail.scss";
 
 const BlogDetail = (props) => {
 	window.scrollTo(0, 0);

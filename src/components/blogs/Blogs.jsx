@@ -8,7 +8,7 @@ import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css";
 
 // import css
-import "./Blogs.css";
+import "./Blogs.scss";
 import { Link } from "react-router-dom";
 
 export default function Blogs() {

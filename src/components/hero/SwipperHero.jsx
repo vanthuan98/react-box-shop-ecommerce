@@ -7,7 +7,7 @@ import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css";
 
 // import style
-import "./Hero.css";
+import "./Hero.scss";
 
 // import backgroungImage
 import bg_hero_1 from "./../../images/hero/bg-shoes-sport-1.jpg";
@@ -27,7 +27,7 @@ export default function SwipperHero() {
 		backgroundPosition: "center",
 	};
 	return (
-		<section>
+		<section className="hero-slides">
 			<Swiper
 				loop={true}
 				className="mySwiper"

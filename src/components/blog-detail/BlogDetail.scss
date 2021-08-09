@@ -1,0 +1,40 @@
+
+.blog-detail {
+    .blog__header {   
+        .breadcrumb-blog__title {
+            display: inline-block;
+            padding: 1rem;
+        }
+    }
+    .blog__content {
+        .blog__content__title {
+            h1 {
+                margin: 3rem 0;
+                color: tomato;
+                font-size: 2rem;
+            }
+        }
+        .blog__content__avatar {
+            margin-bottom: 2rem;
+            img {
+                width: 100%;
+                max-width: 100%;
+                display: block;
+            }
+        }
+        .blog__info__meta {
+            display: flex;
+            padding-bottom: .5rem;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 1.5rem;
+        }
+        .blog__content__description {
+            p {
+                margin-bottom: 1rem;
+                font-size: 15px;
+                color: #555;
+                line-height: 1.8;
+            }
+        }
+    }
+}

@@ -179,9 +179,6 @@ ul.tabs-show .tabs-show__item.active {
     .product-info__price {
         font-size: 1rem;
     }
-    .product-info__btn-atc {
-        visibility: visible;
-    }
 }
 
 

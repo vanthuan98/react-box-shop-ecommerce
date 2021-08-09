@@ -2,8 +2,11 @@ import React from "react";
 import bannerHero1 from "../../images/hero/shoes-banner-1.jpg";
 import bannerHero2 from "../../images/hero/shoes-banner-2.jpg";
 import bannerHero3 from "../../images/hero/shoes-banner-3.jpg";
+import "./Hero.scss";
 
 const BannerHero = () => {
+	window.scrollTo(0, 0);
+
 	return (
 		<section className="banner-hero">
 			<div className="container">

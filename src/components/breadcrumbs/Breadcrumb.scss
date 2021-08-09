@@ -1,0 +1,22 @@
+@import "../../scss/mixin";
+
+.breadcrumb {
+    font-size: 1rem;
+    color: #555;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+
+    .breadcrumb_home, .breadcrumb_shop, span {
+        display: inline-block;
+        margin: 1rem 1rem;
+        color: #555;
+        transition: .2s ease-out;
+
+        @include respond-to('small') {
+            margin: .5rem;
+        }
+    }
+    a:hover {
+        color: #ffb900;
+    }
+}

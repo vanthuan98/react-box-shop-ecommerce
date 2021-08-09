@@ -62,7 +62,7 @@
     font-size: .9rem;
 }
 
-.views, .author {
+.views {
     display: flex;
     align-items: flex-end;
     margin-left: 1rem;
@@ -108,18 +108,6 @@
 
 .btn-read-more:hover {
     background-color: #ffb900;
-}
-
-@media (max-width: 992px) {
-    .blog__header {
-        padding: 3rem 0;
-    }
-}
-
-@media (max-width: 576px) {
-    .blog__header {
-        padding: 1rem 0;
-    }
 }
 
 

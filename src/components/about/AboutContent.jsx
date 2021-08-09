@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import about1 from "../../images/about/about-us-product.jpg";
-import "./About.css";
+import "./About.scss";
 
 const AboutContent = () => {
 	function scrollToTop() {

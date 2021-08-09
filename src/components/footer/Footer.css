@@ -12,16 +12,13 @@
 .address-info {
     display: flex;
     align-items: center;
+    font-size: .9rem;
 }
 
 .address-info box-icon {
     width: 35px;
     height: 35px;
     margin-right: 1rem;
-}
-
-.address-info {
-    font-size: .9rem;
 }
 
 .footer-nav {
@@ -42,6 +39,8 @@
     display: inline-block;
     color: #aaa;
     transition: .2s ease-in;
+    display: flex;
+    align-items: center;
 }
 
 .item-nav li a:hover {
@@ -52,11 +51,6 @@
     width: 30px;
     height: 30px;
     margin-right: 1rem;
-}
-
-.item-nav li a {
-    display: flex;
-    align-items: center;
 }
 
 @media (max-width: 992px) {

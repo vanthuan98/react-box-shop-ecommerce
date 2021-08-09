@@ -1,9 +1,11 @@
 import React from "react";
-import "./CartProducts.css";
+import "./CartProducts.scss";
 import CartTotal from "./CartTotal";
 import TableCart from "./TableCart";
 
 const CartProducts = () => {
+	window.scrollTo(0, 0);
+
 	return (
 		<section className="cart-product">
 			<div className="container">

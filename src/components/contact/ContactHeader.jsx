@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Contact.css";
+import "./Contact.scss";
 
 const ContactHeader = () => {
+	window.scrollTo(0, 0);
+
 	return (
 		<div className="contact__header">
 			<div className="container">

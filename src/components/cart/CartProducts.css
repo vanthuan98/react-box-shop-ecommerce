@@ -133,7 +133,7 @@ h3.cart-total_title {
     color: #e99b00;
     border-color: #ffcc66;
     margin: 1rem 0;
-}
+} 
 
 .no-product-in-cart a {
     display: inline-block;
@@ -158,7 +158,7 @@ h3.cart-total_title {
         max-width: 720px;
     }
     .cart-table {
-    margin-bottom: 3rem;
+        margin-bottom: 3rem;
     }   
     .cart-table tbody tr td {
         padding: 0.5rem 0 0 1rem;

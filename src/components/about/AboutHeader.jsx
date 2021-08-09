@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./About.css";
+import "./About.scss";
 
 const AboutHeader = () => {
+	window.scrollTo(0, 0);
+
 	return (
 		<div className="about__header">
 			<div className="container">

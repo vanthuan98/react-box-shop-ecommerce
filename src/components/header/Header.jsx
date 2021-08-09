@@ -5,13 +5,14 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import MenuLink from "../../Routes/MenuLink";
 import Routes1 from "../../Routes/Routes1";
 import logo from "./../../images/logo.png";
-import "./Header.css";
+import "./Header.scss";
 
 function toggleMenu() {
 	let menu = document.querySelector(".menu");
 	menu.classList.value.indexOf("active") === -1
 		? menu.classList.add("active")
 		: menu.classList.remove("active");
+	window.scrollTo(0, 0);
 }
 
 const Header = () => {
@@ -33,13 +34,17 @@ const Header = () => {
 		}
 	};
 
+	function scrollToTop() {
+		window.scrollTo(0, 0);
+	}
+
 	return (
 		<Router>
 			<header className="header">
 				<div className="container">
-					<a href="/" className="logo">
+					<Link to="/" className="logo" onClick={scrollToTop}>
 						<img src={logo} alt="logo" />
-					</a>
+					</Link>
 					<nav className="nav">
 						<div className="menu-mobile" onClick={toggleMenu}>
 							<box-icon name="menu-alt-right" color="#ffffff" />

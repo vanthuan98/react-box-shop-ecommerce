@@ -89,13 +89,13 @@
     color: #ffb900;
 }
 
-.current-quanlity {
-    margin: 0 5px;
-}
-
 .current-quantity-product {
     display: flex;
     align-items: center;
+}
+
+.current-quanlity {
+    margin: 0 5px;
 }
 
 .current-quantity-product box-icon {

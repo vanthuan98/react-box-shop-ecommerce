@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import "react-toastify/dist/ReactToastify.css";
 import BannerProduct from "./Banner-product";
 import Products from "./Products";
-import "./Show-product.css";
+import "./Show-product.scss";
 
 const ShowProduct = () => {
 	const products = useSelector((state) => state.productsReducer);

@@ -1,5 +1,5 @@
 import React from "react";
-import "./UpcomingDiscount.css";
+import "./UpcomingDiscount.scss";
 
 const UpcomingDiscount = () => {
 	return (
