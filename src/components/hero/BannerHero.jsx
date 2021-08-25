@@ -5,8 +5,7 @@ import bannerHero3 from "../../images/hero/shoes-banner-3.jpg";
 import "./Hero.scss";
 
 const BannerHero = () => {
-	window.scrollTo(0, 0);
-
+	
 	return (
 		<section className="banner-hero">
 			<div className="container">
