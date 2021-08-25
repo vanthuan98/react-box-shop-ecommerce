@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "./static/css/main.3fcd40a8.chunk.css",
-    "main.js": "./static/js/main.9ec59802.chunk.js",
-    "main.js.map": "./static/js/main.9ec59802.chunk.js.map",
+    "main.css": "./static/css/main.ea1b8006.chunk.css",
+    "main.js": "./static/js/main.ddec8dba.chunk.js",
+    "main.js.map": "./static/js/main.ddec8dba.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.d2699fca.js",
     "runtime-main.js.map": "./static/js/runtime-main.d2699fca.js.map",
     "static/css/2.36204570.chunk.css": "./static/css/2.36204570.chunk.css",
-    "static/js/2.50d06cc7.chunk.js": "./static/js/2.50d06cc7.chunk.js",
-    "static/js/2.50d06cc7.chunk.js.map": "./static/js/2.50d06cc7.chunk.js.map",
+    "static/js/2.4c764966.chunk.js": "./static/js/2.4c764966.chunk.js",
+    "static/js/2.4c764966.chunk.js.map": "./static/js/2.4c764966.chunk.js.map",
     "static/js/3.86f815a4.chunk.js": "./static/js/3.86f815a4.chunk.js",
     "static/js/3.86f815a4.chunk.js.map": "./static/js/3.86f815a4.chunk.js.map",
     "index.html": "./index.html",
     "static/css/2.36204570.chunk.css.map": "./static/css/2.36204570.chunk.css.map",
-    "static/css/main.3fcd40a8.chunk.css.map": "./static/css/main.3fcd40a8.chunk.css.map",
-    "static/js/2.50d06cc7.chunk.js.LICENSE.txt": "./static/js/2.50d06cc7.chunk.js.LICENSE.txt",
+    "static/css/main.ea1b8006.chunk.css.map": "./static/css/main.ea1b8006.chunk.css.map",
+    "static/js/2.4c764966.chunk.js.LICENSE.txt": "./static/js/2.4c764966.chunk.js.LICENSE.txt",
     "static/media/04-380x434.e1cecf10.jpg": "./static/media/04-380x434.e1cecf10.jpg",
     "static/media/05-380x434.ca5f0d82.jpg": "./static/media/05-380x434.ca5f0d82.jpg",
     "static/media/06-380x434.9b61f132.jpg": "./static/media/06-380x434.9b61f132.jpg",
@@ -46,13 +46,13 @@
     "static/media/shoes-banner-4.48d7a9ab.jpg": "./static/media/shoes-banner-4.48d7a9ab.jpg",
     "static/media/shoes-banner-5.ebbbef79.jpg": "./static/media/shoes-banner-5.ebbbef79.jpg",
     "static/media/shoes-banner-6.db7efed9.jpg": "./static/media/shoes-banner-6.db7efed9.jpg",
-    "static/media/UpcomingDiscount.css": "./static/media/shoes-banner-bg-2.989dafa4.jpg"
+    "static/media/UpcomingDiscount.scss": "./static/media/shoes-banner-bg-2.989dafa4.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d2699fca.js",
     "static/css/2.36204570.chunk.css",
-    "static/js/2.50d06cc7.chunk.js",
-    "static/css/main.3fcd40a8.chunk.css",
-    "static/js/main.9ec59802.chunk.js"
+    "static/js/2.4c764966.chunk.js",
+    "static/css/main.ea1b8006.chunk.css",
+    "static/js/main.ddec8dba.chunk.js"
   ]
 }
